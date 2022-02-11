@@ -558,7 +558,7 @@ import template from './libraryoptionseditor.template.html';
         parent.querySelector('.chkEnableRealtimeMonitor').checked = options.EnableRealtimeMonitor;
         parent.querySelector('.chkExtractChaptersDuringLibraryScan').checked = options.ExtractChapterImagesDuringLibraryScan;
         parent.querySelector('.chkExtractChapterImages').checked = options.EnableChapterImageExtraction;
-        parent.querySelector('.chkChapterImagesExtractionInterval').value = options.ChapterImagesExtractionInterval || '';
+        parent.querySelector('.chkChapterImagesExtractionInterval').value = options.ChapterImagesExtractionInterval || '300';
         parent.querySelector('#chkSaveLocal').checked = options.SaveLocalMetadata;
         parent.querySelector('.chkAutomaticallyGroupSeries').checked = options.EnableAutomaticSeriesGrouping;
         parent.querySelector('#chkEnableEmbeddedTitles').checked = options.EnableEmbeddedTitles;
