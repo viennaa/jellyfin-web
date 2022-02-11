@@ -500,6 +500,7 @@ import template from './libraryoptionseditor.template.html';
             EnableRealtimeMonitor: parent.querySelector('.chkEnableRealtimeMonitor').checked,
             ExtractChapterImagesDuringLibraryScan: parent.querySelector('.chkExtractChaptersDuringLibraryScan').checked,
             EnableChapterImageExtraction: parent.querySelector('.chkExtractChapterImages').checked,
+            ChapterImagesExtractionInterval: parent.querySelector('.chkChapterImagesExtractionInterval').value,
             EnableInternetProviders: true,
             SaveLocalMetadata: parent.querySelector('#chkSaveLocal').checked,
             EnableAutomaticSeriesGrouping: parent.querySelector('.chkAutomaticallyGroupSeries').checked,
@@ -557,6 +558,7 @@ import template from './libraryoptionseditor.template.html';
         parent.querySelector('.chkEnableRealtimeMonitor').checked = options.EnableRealtimeMonitor;
         parent.querySelector('.chkExtractChaptersDuringLibraryScan').checked = options.ExtractChapterImagesDuringLibraryScan;
         parent.querySelector('.chkExtractChapterImages').checked = options.EnableChapterImageExtraction;
+        parent.querySelector('.chkChapterImagesExtractionInterval').value = options.ChapterImagesExtractionInterval || '';
         parent.querySelector('#chkSaveLocal').checked = options.SaveLocalMetadata;
         parent.querySelector('.chkAutomaticallyGroupSeries').checked = options.EnableAutomaticSeriesGrouping;
         parent.querySelector('#chkEnableEmbeddedTitles').checked = options.EnableEmbeddedTitles;
